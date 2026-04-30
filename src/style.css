@@ -1,0 +1,567 @@
+html {
+  font-size: 16px;
+   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  line-height: 1.5;
+}
+
+*{
+    text-decoration: none;
+    *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+    
+}
+body{
+    scroll-padding-top: var(--top-spacing);
+background-color: #e0e0e0ff;
+margin: 0;
+} 
+main {
+    padding-top: 100px; 
+}
+header { 
+    position: fixed;
+    top: 0;
+    z-index:1000;  
+    right: 0;
+    left: 0;
+    background-color: #e0e0e0ff;   
+    width: 100%; 
+    height: 180px;  
+    box-shadow: none;
+ transition: box-shadow 0.3s ease-in-out;
+}
+header.scrolled {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+
+} 
+
+.header-cases .header-brand { 
+    font-family: Catamaran;
+    font-size: 24px;
+    font-weight: 300;
+    color: #111;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+/* ---------------------------------------- */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+/* TECHNOLOGIES-ICON ROW */
+header nav ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    align-items: center;
+    margin: 50px;
+    padding: 0;
+}
+
+header nav ul li img {
+    height: 62px; /* adjust size of icons */
+    transition: transform 0.3s ease;
+}
+header nav ul li img:hover {
+    transform: scale(1.4); /* enlarge icon on hover */
+}
+
+/* NAVIGATION LINKS HOME-ABOUT-PORTFOLIO*/
+.header-links {
+    display: flex;
+    gap: 40px;        /* spacing between Home / About / Portfolio */
+    list-style: none;
+}
+.header-links a {
+    font-family: Catamaran;
+    font-size: 36px;   
+    color: rgb(25, 23, 23);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 100;
+}
+.header-links .active a {
+    font-weight:200; /* highlight active page */
+}
+/* //highlight color */
+.header-links a:hover {     
+  color: orange;
+}
+
+
+header .header-cases {
+    display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+    header .header-brand {
+        margin: 31px 0;
+        text-align: left;
+        line-height: 38px;
+        padding: 0 20px 0 40px;
+        border-right: 3px solid #111; 
+        float: left;
+    }
+    header nav ul {
+        margin: 20px 0px 0px 20px;
+        float:left;
+    }
+    
+     header nav ul li {
+       display: inline-block;
+       float: left;
+       list-style: none; 
+       padding: 0 16px;
+    } 
+     
+    header nav ul li a {
+        font-family: Catamaran;
+        font-size: 16px;
+        font-weight: 900; 
+        color: #111;  
+        line-height: 60px;
+        
+    } 
+    /* navigation top right text link<--------- */
+     header .header-cases {
+        display: block;
+        font-family: Catamaran;
+        font-size:40px;
+        color: rgb(218, 12, 12);
+        font-weight:lighter;
+        text-transform: uppercase;
+        line-height: 38px;
+        border: 1px solid #111;
+        float: right;
+        margin-right: 130px;
+        margin-top: 70px;
+        padding: 0 20px;
+    }    
+/* /////////////// */
+
+@media (min-width: 600px) {
+    .cta .text h1 { font-size: 55px; }
+    .cta .text p { font-size: 32px; }
+    .articles { width: 45%; }
+}
+
+/* TABLETS: 768px */
+ @media (min-width: 768px) {
+    header nav { flex-direction: row; }
+    .cta { flex-direction: row; }
+    .projects-container { flex-direction: row; }
+}
+
+/* DESKTOP: 1024px */
+@media (min-width: 1024px) {
+    .cta .text h1 { font-size: 85px; }
+    .cta .text p { font-size: 60px; }
+    .articles { width: 30%; }
+}  
+
+header nav {
+    display: flex;
+    justify-content: space-between; /* pushes left + right apart */
+    align-items: center;
+}
+    header .header-cases {
+    display: block;
+    font-family: Catamaran;
+    font-size: 90px;
+    color: rgb(218, 12, 12);
+    font-weight: lighter;
+    text-transform: uppercase;
+    line-height: 38px;
+    margin-right: 130px;
+    margin-top: 70px;
+    padding: 0 20px;
+    margin-left: auto; /* flexbox pushes it to the right */
+}
+
+}
+/* TITLE/POSITION */
+.cta {
+  background-color: #e0e0e0ff;
+  display: flex;
+  flex-direction: row; /* side-by-side layout */
+  align-items: center; /* vertically center text and image */
+  justify-content: space-between; /* space out text and image */
+  margin: 2rem;
+  padding: 50px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.cta .text {
+  max-width: 40%; /* keep text compact on left */
+}
+
+ /* //MY NAME/*/
+.cta .text h1 { 
+  margin-left: 6rem;
+  font-size: 3.1rem;
+  margin-top: 315px;
+}
+
+.cta .text p {
+  font-size: 0.5rem;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+p {
+  font-size: 1.6rem;
+   margin: 1rem auto;
+  max-width: 700px;
+}
+
+.jobtitle{
+  font-size: 2.1rem;
+  margin: 35px 60px;
+  font-weight: 300;
+}
+
+/* CONTACT ME BUTTON */
+.cta button {
+  padding: 15px 30px;
+  cursor: pointer;
+  background-color: #ed866bff;
+  border: none;
+  border-radius: 40px;
+  height:74px;
+  width: 426px;
+  font-size: 2rem;
+  margin: 5px 68px;
+  font-weight:lighter;
+}
+  .cta button:hover {
+  transform: scale(1.1);       /* nice hover zoom effect */
+}
+
+.cta button:hover{
+  color: rgb(25, 25, 213);
+}
+
+/* SOCIAL ICONS UNDER BUTTON */
+.social-icons ul {
+  display: flex;               /* makes the list horizontal */
+  justify-content: flex-start; /* aligns icons to the left */
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 40px; 
+  margin-bottom: 18px;
+  margin-left: 105px;
+  gap: 57px;                   /* space between icons */
+}
+.social-icons li {
+  display: inline-block;       /* icons sit inline */
+}
+.social-icons img {
+  width: 45px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+.social-icons img:hover {
+  transform: scale(1.1);       /* nice hover zoom effect */
+}
+
+
+/* HERO IMAGE */
+.hero-image img{
+   max-width: 120%;
+  height: auto;
+  margin-top: 225px;
+}
+.hero-image img:hover{
+  transform: scale(1.1);
+}
+
+
+/* INDEX */
+.index-banner{
+    height: 200px;
+    width: 1000px;
+}
+
+ .index-banner {
+width: 100%;
+height: calc(100vh -100px);
+background-position: center;
+background-size: cover;
+display: table;
+} 
+
+.vertical-center {
+display: table-cell;
+vertical-align: middle;
+}
+
+.index-banner h2 {
+    font-family: Catamaran;
+    font-size: 55px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 70px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+}
+
+.index-banner h1 {
+    font-family: Cormorant Garamond;
+    font-size: 28px;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+}
+
+.index-links div {
+    margin: 16px 16px 0;
+    width: calc(100% - 32px);
+    height: 100px;
+    background-color: #f2f2f2;
+} 
+
+.index-links div h3 {
+    font-family: Catamaran;
+    font-size: 28px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 100px;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;   
+} 
+@media only screen and (min-width: 1000px) {
+    .wrapper {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .index-banner {
+        height: 450px;
+    }
+
+    .index-banner h1 {
+            display: block;
+            width: 560;
+            margin: 0 auto;
+    }
+
+    .index-links  {
+            overflow: hidden;
+    } 
+
+    .index-links div {
+            margin: 20px 10px 0;
+            height: 230px;
+            background-color: #f2f2f2;
+            float:left;
+    } 
+
+    .index-boxlink-square {
+        width: calc(25% - 20px) !important;
+    }
+    .index-boxlink-rectangle {
+        width: calc(50% - 20px) !important;
+    }
+    .index-links div h3 {
+        line-height: 230px;
+         
+    } 
+    }  
+
+.index {
+  width:100%;
+  height: 700px;
+  background-color: #e0e0e0ff;
+  color:#1a0337;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 100px 80px 20px;
+  font-size: 32px;
+  
+} 
+.index-portfolio{
+  width:100%;
+  height: 140px;
+  background-color: #e0e0e0ff;
+  color:#1a0337;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 100px 80px 20px;
+  font-size: 32px;
+}
+.index-about{
+display:inline-block;
+text-wrap: wrap;
+font-size: 30px;
+justify-content: center;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+background-color: #e0e0e0ff;
+height: 1500px;
+}
+
+/* PORTFOLIO CARDS */
+.article {
+width: 100%;
+  height: 400px;
+  margin: 16px 16px 0;
+  font-size: 32px;
+}
+.article img{
+    height:500px;
+    width: 500px;
+    background-color:white;
+    box-shadow: 1.5px 1.5px 1.5px 0.5px rgb(175, 173, 173); 
+    border-radius: 20px;  
+  }
+ .article img:hover{
+  color: black;
+ } 
+
+.articles img {
+  width: 500px;
+  height: 800px;
+  padding: 10px;
+  background: #fff;
+  box-sizing: border-box;
+  box-shadow: 1.5px 1.5px 1.5px 0.5px rgb(175, 173, 173); 
+  border-radius: 20px;
+  position: relative;
+}
+/* PORTFOLIO CARDS ABOVE*/ 
+.image-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-inline-start: 40px;
+ 
+}
+p{
+ text-align: justify;
+text-wrap: wrap;
+font-size: 40px;
+font-family: Arial, Helvetica, sans-serif;
+margin: 30px 300px;
+}
+
+h2{
+  font-size: 40px;
+font-family: Catamaran;;
+color: black;
+text-align: center;
+
+}
+h4{
+font-size: 24px;
+font-family: Catamaran;
+text-align: justify;
+text-wrap: wrap;
+color: black;
+font-weight: 300;
+margin:30px 140px;
+}
+
+.portbutton{
+  font-size: 30px;
+  border-radius: 20px;
+  padding: 12px;
+  border: none;
+}
+.portbutton:hover{
+  color: blue;
+}
+.projects-container{
+  display:flex;
+  flex-direction: row;
+  margin-top: 240px;
+}
+.addPortCard{
+  font-size: 38px;
+  margin: auto 1008px;
+  position: fixed;
+  bottom: 80px; /* Distance from bottom */
+  left: 50%;
+  transform: translateX(-45);
+  border-radius: 10px;
+  padding: 2px 14px;
+  border: none;
+  color: rgb(201, 197, 197);
+}
+.deletePortCard{
+  font-size: 38px;
+  margin: auto 1100px;
+  position: fixed;
+  bottom: 80px; /* Distance from bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  padding: 2px 18px;
+  border: none;
+  color: rgb(201, 197, 197);
+}
+.deletePortCard:hover{
+ color: orange;
+}
+.addPortCard:hover{
+ color: orange;
+}
+
+.indexText{
+  margin: 500px 10px;
+  color:rgb(123, 122, 122)
+}
+
+.programming-icon:hover {
+  animation: App-logo-spin infinite 20s linear; 
+  transform: scale(1.9);
+  transition: transform 0.8s ease;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(4860deg);
+  }
+}
+
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: center; /* Zoom from center */
+}
+ /* transform: scale(1.1); */
+.project-card:hover {
+  transform: scale(1.1); /* Zoom in 5% */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
+  z-index: 10; /* Bring to front */
+}
+
+.project-card:active {
+  transform: scale(0.98); /* Slight zoom out on click */
+}
+
+.page-create{
+  margin: 400px 200px;
+}
+

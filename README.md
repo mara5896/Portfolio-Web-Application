@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# **Portfolio Web Application**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **Overview**
 
-## Available Scripts
+This is a portfolio web application built with JavaScript, React, and Supabase. It is designed to showcase digital products that solve real world problems while maintaining a scalable and maintainable architecture.
 
-In the project directory, you can run:
+The application currently includes a Home, About, Contact, and Portfolio page. It is built with future growth in mind, including planned integration of data structures, algorithms, and AI driven features.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **Features**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Dynamic UI built with React
+* Reusable component based architecture
+* Portfolio page with dynamic project management (add/remove functionality)
+* Contact form with Supabase integration for data persistence
+* Form state management using React hooks (useState and useEffect)
+* Scalable structure for future enhancements
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## **Tech Stack**
 
-### `npm run build`
+* JavaScript
+* React
+* Supabase
+* HTML
+* CSS
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Planned Technologies:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Express
+* MongoDB (as a potential alternative backend solution)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## **Problem**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The original version of this application was built using vanilla JavaScript, HTML, and CSS. As the project grew, the codebase became difficult to manage, reuse, and scale.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## **Solution**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The application was rebuilt using React to improve code organization, reusability, and scalability. This allows for more efficient development and easier expansion of features over time.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## **Getting Started**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### **Prerequisites**
 
-### Code Splitting
+* Node.js (includes npm)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Install dependencies:
 
-### Analyzing the Bundle Size
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## **Running the Application**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Start the development server:
 
-### Advanced Configuration
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The app will run locally at:
 
-### Deployment
+```
+http://localhost:3000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## **Environment Variables**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To enable Supabase functionality, create a `.env` file in the root directory and add:
+
+```bash
+REACT_APP_SUPABASE_URL=your_supabase_url
+REACT_APP_SUPABASE_ANON_KEY=your_anon_key
+```
+
+---
+
+## **Known Issues**
+
+The contact form is currently not functioning as intended due to a Supabase account expiration. The project exceeded the 90 day usage period. I am actively working on resolving the issue. 
+
+All other features of the application remain functional.
+
+---
+
+## **Future Improvements**
+
+* Integrate data structures and algorithms into application features
+* Add AI driven functionality
+* Implement authentication to restrict access to admin features
+* Create a private Messages page accessible only within the application
+* Restrict Portfolio page controls so only the owner can add or remove projects
+* Replace the hero image
+
