@@ -1,9 +1,8 @@
 # **Portfolio Web Application**
 
-## **Overview**
+## Overview 
 
-This portfolio web application, built with JavaScript, React, and Supabase, currently includes Home, About, Contact, and Portfolio pages and is designed with scalability in mind, with future plans to incorporate data structures, algorithms, and AI.
----
+This portfolio web application is built with JavaScript, React, and Supabase, and currently includes Home, About, Contact, and Portfolio pages. It is structured for scalability, with plans to incorporate data structures, algorithms, and AI in the future.
 
 ## **Features**
 
