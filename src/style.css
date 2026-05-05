@@ -17,7 +17,7 @@ body {
     
 }
 body{
-    scroll-padding-top: var(--top-spacing);
+scroll-padding-top: var(--top-spacing);
 background-color: #e0e0e0ff;
 margin: 0;
 } 
@@ -32,9 +32,10 @@ header {
     left: 0;
     background-color: #e0e0e0ff;   
     width: 100%; 
-    height: 180px;  
+    height: 160px;  
     box-shadow: none;
  transition: box-shadow 0.3s ease-in-out;
+  padding: 20px 50px;
 }
 header.scrolled {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
@@ -60,7 +61,7 @@ header nav {
     padding: 20px 40px;
 }
 
-/* TECHNOLOGIES-ICON ROW */
+/* TECHNOLOGIES ICON ROW */
 header nav ul {
     display: flex;
     gap: 50px;
@@ -157,7 +158,7 @@ header .header-cases {
     .articles { width: 45%; }
 }
 
-/* TABLETS: 768px */
+/* TABLET: 768px */
  @media (min-width: 768px) {
     header nav { flex-direction: row; }
     .cta { flex-direction: row; }
@@ -187,18 +188,17 @@ header nav {
     margin-right: 130px;
     margin-top: 70px;
     padding: 0 20px;
-    margin-left: auto; /* flexbox pushes it to the right */
+    margin-left: auto; 
 }
 
 }
-/* TITLE/POSITION */
+/* TITLE/POSITION */ 
 .cta {
   background-color: #e0e0e0ff;
   display: flex;
-  flex-direction: row; /* side-by-side layout */
+  flex-direction: row; 
   align-items: center; /* vertically center text and image */
-  justify-content: space-between; /* space out text and image */
-  margin: 2rem;
+  justify-content: space-between; 
   padding: 50px;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
@@ -213,7 +213,7 @@ header nav {
 .cta .text h1 { 
   margin-left: 6rem;
   font-size: 3.1rem;
-  margin-top: 315px;
+  margin-top: 90px;
 }
 
 .cta .text p {
@@ -247,7 +247,7 @@ p {
   margin: 5px 68px;
   font-weight:lighter;
 }
-  .cta button:hover {
+.cta button:hover {
   transform: scale(1.1);       /* nice hover zoom effect */
 }
 
@@ -282,10 +282,13 @@ p {
 
 
 /* HERO IMAGE */
+.hero-image{
+ margin-top: 45px; 
+}
 .hero-image img{
-   max-width: 120%;
+  max-width: 120%;
   height: auto;
-  margin-top: 225px;
+  /* margin-top: 205px; */
 }
 .hero-image img:hover{
   transform: scale(1.1);
@@ -298,7 +301,7 @@ p {
     width: 1000px;
 }
 
- .index-banner {
+.index-banner {
 width: 100%;
 height: calc(100vh -100px);
 background-position: center;
@@ -448,18 +451,17 @@ width: 100%;
   border-radius: 20px;
   position: relative;
 }
+
 /* PORTFOLIO CARDS ABOVE*/ 
 .image-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-inline-start: 40px;
- 
 }
 
-
 h2{
-  font-size: 40px;
+font-size: 40px;
 font-family: Catamaran;;
 color: black;
 text-align: center;
@@ -480,6 +482,7 @@ margin:30px 140px;
   border-radius: 20px;
   padding: 12px;
   border: none;
+  margin:10px 190px;
 }
 .portbutton:hover{
   color: blue;
@@ -493,7 +496,7 @@ margin:30px 140px;
   font-size: 38px;
   margin: auto 1008px;
   position: fixed;
-  bottom: 80px; /* Distance from bottom */
+  bottom: 980px; /* Distance from bottom */
   left: 50%;
   transform: translateX(-45);
   border-radius: 10px;
@@ -505,7 +508,7 @@ margin:30px 140px;
   font-size: 38px;
   margin: auto 1100px;
   position: fixed;
-  bottom: 80px; /* Distance from bottom */
+  bottom: 980px; /* Distance from bottom */
   left: 50%;
   transform: translateX(-50%);
   border-radius: 10px;
@@ -522,12 +525,10 @@ margin:30px 140px;
 
 /*ABOUT PAGE TEXT*/
 .indexText{
-  margin: 500px 400px;
+  margin: 400px 400px;
   color:rgb(123, 122, 122);
 }
 p{
- /* text-align: justify; */
-/* text-wrap: wrap; */
 font-size: 1.75rem;
 font-family: Arial, Helvetica, sans-serif;
 }
@@ -565,3 +566,31 @@ font-family: Arial, Helvetica, sans-serif;
   margin: 400px 200px;
 }
 
+/* //forms */
+form{
+  background: #fff;
+  padding: 40px;
+  max-width: 480px;
+  height: 600px;
+  margin: 20px auto;
+  border-radius: 12px;
+}
+form input, form textarea {
+  display:block;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  margin: 10px 0 20px 0;
+}
+form button{
+  background:#ed866bff;
+  color: white;
+  border: 0;
+  margin: 20px 80px;
+  border-radius: 6px;
+  padding: 16px 90px;
+  font-family: Catamaran;
+  font-size: 1rem;
+  cursor: pointer;
+}
