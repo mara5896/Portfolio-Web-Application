@@ -26,7 +26,7 @@ This portfolio web application is built with JavaScript, React, and Supabase, an
 **Planned Technologies:**
 
 * Express
-* MongoDB (as a potential alternative backend solution)
+* MongoDB 
 
 ---
 
@@ -83,20 +83,15 @@ REACT_APP_SUPABASE_ANON_KEY=your_anon_key
 
 ---
 
-## **Known Issues**
-
-The contact form is currently not functioning as intended due to a Supabase account expiration. The project exceeded the 90 day usage period. I am actively working on resolving the issue. 
-
-All other features of the application remain functional.
-
----
 
 ## **Future Improvements**
 
+* Make the layout responsive for mobile and tablet devices
+* Replace the hero image
 * Integrate data structures and algorithms into application features
 * Add AI driven functionality
 * Implement authentication to restrict access to admin features
 * Create a private Messages page accessible only within the application
 * Restrict Portfolio page controls so only the owner can add or remove projects
-* Replace the hero image
+
 
