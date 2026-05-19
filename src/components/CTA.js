@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 export default function CTA() {
   return (
+   
     <section className="cta">
       <div className="text">
         <h1>Kai Washington</h1>
         <h2 className="jobtitle">SOFTWARE ENGINEER</h2>
- <Link to="/create"> 
+ <Link to="/contact"> 
            <button>Contact Me</button>
            </Link>
         <nav className="social-icons">

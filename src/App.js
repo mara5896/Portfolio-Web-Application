@@ -4,9 +4,9 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Portfolio from "./pages/Portfolio"
 import Update from "./pages/Update"
-import Create from "./components/Create"
+import Form from "./components/Form"
 import Contact from "./pages/Contact"
-import Report from "./components/Report"
+import Chat from "./components/Chat"
 
 import { Route, Routes } from "react-router-dom"
 
@@ -20,10 +20,10 @@ function App(){
     <Route path="/" element={<Home />}/>
     <Route path="/portfolio" element={<Portfolio />}/>
     <Route path="/about" element={<About />}/>
-    <Route path="/create" element={<Create />}/>
+    <Route path="/form" element={<Form />}/>
      <Route path="/:id" element={<Update />} />
      <Route path="/contact" element={<Contact />} />
-       {/* <Route path="/report" element={<Report />} /> */}
+       {/* <Route path="/chat" element={<Chat />} /> */}
   </Routes>
   </div>
   </>

@@ -20,10 +20,11 @@ export default function Header() {
 
         <ul className="header-links">
           <CustomLink to="/">Home</CustomLink>
-          <CustomLink to="/about">About</CustomLink>
+         
           <CustomLink to="/portfolio">Portfolio</CustomLink>
-           {/* <CustomLink to="/report">Report</CustomLink> */}
+           {/* <CustomLink to="/chat">Chat</CustomLink> */}
          <CustomLink to="/contact">Contact</CustomLink>
+          <CustomLink to="/about">About</CustomLink>
         </ul>
       </nav>
     </header>
