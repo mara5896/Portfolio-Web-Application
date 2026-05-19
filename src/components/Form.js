@@ -39,28 +39,84 @@ const Form = () => {
   return (
     <div className="page form">
     <form onSubmit={handleSubmit}>
-      <label htmlFor="name">Name:</label>
-      <input
-      type="text"
-      id="name"
-      value={name}
-      onChange={(e) => setName(e.target.value)}
-      />
-
-      <label htmlFor="email">email:</label>
-      <input
-      id="email"
-      value={email}
-      onChange={(e) => setEmail(e.target.value)}
-      />
-
-      <label htmlFor="message">Message:</label>
-      <textarea
-      type="text"
-      id="message"
-      value={message}
-      onChange={(e) => setMessage(e.target.value)}
-      />
+      <div className="contact-me" style={{ 
+      }}>
+        {/* Contact Me */}
+      </div> 
+  <label htmlFor="name" style={{ 
+            display: 'block', 
+            marginBottom: '0.5rem',
+            fontSize: '1.5rem',
+            color: '#333'
+          }}>
+            Name:
+          </label>
+    <input
+            type="text"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Enter your name"
+            style={{ 
+              padding: '1rem', 
+              fontSize: '1.5rem', 
+              border: '2px solid #ccc',
+              borderRadius: '10px',
+              width: '100%',
+              boxSizing: 'border-box'
+            }}
+          />
+          <label htmlFor="email" style={{ 
+            display: 'block', 
+            marginBottom: '0.5rem',
+            fontSize: '1.5rem',
+            color: '#333'
+          }}>
+            Email:
+          </label>
+ <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Enter your email"
+            style={{ 
+              padding: '1rem', 
+              fontSize: '1.5rem', 
+              border: '2px solid #ccc',
+              borderRadius: '10px',
+              width: '100%',
+              boxSizing: 'border-box'
+            }}
+          />
+      <div>
+          <label htmlFor="message" style={{ 
+            display: 'block', 
+            marginBottom: '0.5rem',
+            fontSize: '1.5rem',
+            color: '#333'
+          }}>
+            Message:
+          </label>
+          <textarea
+            id="message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            placeholder="Enter your message here..."
+            rows="6"
+            style={{ 
+              padding: '1rem', 
+              fontSize: '1.5rem', 
+              border: '2px solid #ccc',
+              borderRadius: '10px',
+              width: '100%',
+              boxSizing: 'border-box',
+              fontFamily: 'inherit',
+              resize: 'vertical'
+            }}
+          />
+        </div>
+        
       <button>Send Message</button>
 
       {formError && <p className="error">{formError}</p>}
