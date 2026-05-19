@@ -152,26 +152,6 @@ header .header-cases {
     }    
 /* /////////////// */
 
-@media (min-width: 600px) {
-    .cta .text h1 { font-size: 55px; }
-    .cta .text p { font-size: 32px; }
-    .articles { width: 45%; }
-}
-
-/* TABLET: 768px */
- @media (min-width: 768px) {
-    header nav { flex-direction: row; }
-    .cta { flex-direction: row; }
-    .projects-container { flex-direction: row; }
-}
-
-/* DESKTOP: 1024px */
-@media (min-width: 1024px) {
-    .cta .text h1 { font-size: 85px; }
-    .cta .text p { font-size: 60px; }
-    .articles { width: 30%; }
-}  
-
 header nav {
     display: flex;
     justify-content: space-between; /* pushes left + right apart */
@@ -257,7 +237,7 @@ p {
 
 /* SOCIAL ICONS UNDER BUTTON */
 .social-icons ul {
-  display: flex;               /* makes the list horizontal */
+  display: flex;               /* horizontal */
   justify-content: flex-start; /* aligns icons to the left */
   align-items: center;
   list-style: none;
@@ -277,7 +257,7 @@ p {
   transition: transform 0.1s ease;
 }
 .social-icons img:hover {
-  transform: scale(1.1);       /* nice hover zoom effect */
+  transform: scale(1.1);       /* hover zoom effect */
 }
 
 
@@ -496,7 +476,7 @@ margin:30px 140px;
   font-size: 38px;
   margin: auto 1008px;
   position: fixed;
-  bottom: 980px; /* Distance from bottom */
+  bottom: 980px; /* distance from bottom */
   left: 50%;
   transform: translateX(-45);
   border-radius: 10px;
@@ -508,7 +488,7 @@ margin:30px 140px;
   font-size: 38px;
   margin: auto 1100px;
   position: fixed;
-  bottom: 980px; /* Distance from bottom */
+  bottom: 980px; /* distance from bottom */
   left: 50%;
   transform: translateX(-50%);
   border-radius: 10px;
@@ -549,48 +529,56 @@ font-family: Arial, Helvetica, sans-serif;
 
 .project-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform-origin: center; /* Zoom from center */
+  transform-origin: center; 
 }
  /* transform: scale(1.1); */
 .project-card:hover {
-  transform: scale(1.1); /* Zoom in 5% */
+  transform: scale(1.1); /* zoom in 5% */
   box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
-  z-index: 10; /* Bring to front */
+  z-index: 10; 
 }
 
 .project-card:active {
-  transform: scale(0.98); /* Slight zoom out on click */
+  transform: scale(0.98); /* zoom out on click */
 }
 
 .page-create{
   margin: 400px 200px;
 }
 
-/* //forms */
-form{
+/* forms */
+.page form{
   background: #fff;
   padding: 40px;
-  max-width: 480px;
-  height: 600px;
+  max-width: 580px;
+  height: 750px;
   margin: 20px auto;
   border-radius: 12px;
 }
-form input, form textarea {
+
+.form input, form textarea {
   display:block;
   width: 100%;
   padding: 30px;
   box-sizing: border-box;
-  border: 1px solid #ccc;
+  border: 1px solid #e1dfdf;
   margin: 10px 0 20px 0;
 }
-form button{
+.form button{
   background:#ed866bff;
   color: white;
-  border: 0;
-  margin: 20px 80px;
-  border-radius: 6px;
-  padding: 16px 90px;
+  border: none;
+   margin: 20px 55px; 
+  border-radius: 25px;
+  padding: 1rem 3rem; 
   font-family: Catamaran;
-  font-size: 1rem;
+  font-size: 1.8rem;
   cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  max-Width: 400px;
+  transition:background-color 0.3s ease;
+  height:70px;
 }
+
